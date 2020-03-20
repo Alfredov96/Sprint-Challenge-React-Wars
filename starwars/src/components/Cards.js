@@ -28,7 +28,7 @@ const Cards = props => {
         </HeaderStyle>
             <h2>mass:{props.mass}</h2>
             <h2>eye color:{props.eye_color}</h2>
-            <h2>hair color: {props.hair_color}</h2>
+            <h2>hair color: {props.haircolor}</h2>
             <h2>height:{props.height}</h2>
         </CardStyle>
     )

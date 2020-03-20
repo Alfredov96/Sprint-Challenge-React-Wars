@@ -40,7 +40,7 @@ const App = () => {
         name={character.name}
         mass={character.mass}
         eye_color={character.eye_color}
-        hair_color={character.hair_color}
+        haircolor={character.hair_color}
         height={character.height}
         
         />
