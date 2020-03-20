@@ -13,7 +13,7 @@ const App = () => {
       .get('https://swapi.co/api/people/')
       .then(response => {
         console.log(response.data)
-        setData(response.data.result)
+        setData(response.data.results)
       })
       .catch(error => {
         console.log(error)
@@ -34,11 +34,15 @@ const App = () => {
 
       return (
 
-        <CardStyle
+        <Cards
         key={index}
-        head={character.starwarsChars}
-        //info={character.CardStyle}
-        image={character.url}
+
+        name={character.name}
+        mass={character.mass}
+        eye_color={character.eye_color}
+        hair_color={character.hair_color}
+        height={character.height}
+        
         />
       )
       })}
