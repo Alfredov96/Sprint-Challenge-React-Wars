@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import cards from './components/Cards'
+import Cards from './components/Cards'
 import './App.css';
 
 const App = () => {
@@ -25,7 +25,24 @@ const App = () => {
 
   return (
     <div className="App">
+
       <h1 className="Header">React Wars</h1>
+
+    <section className = 'CardContainer'>
+    {data.map((character, index)=> {
+      console.log(character);
+
+      return (
+
+        <CardStyle
+        key={index}
+        head={character.starwarsChars}
+        //info={character.CardStyle}
+        image={character.url}
+        />
+      )
+      })}
+    </section>
     </div>
   );
 }
